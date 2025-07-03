@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da scrollbar */
+    height: 8px; /* Altura da scrollbar horizontal */
+    background-color: #1f2124;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6c757d; /* Cor do "polegar" da scrollbar */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #495057; /* Cor ao passar o mouse */
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+header{
+    background-image: url('./assets/bg.png'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.add-cart{
+    transition: all 0.3s ease-in-out;
+}
+
+.add-cart:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.card{
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
